@@ -1,0 +1,59 @@
+{
+  "project": {
+    "version": "1.0.0",
+    "name": "nb"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "cv",
+      "mobile": false,
+      "styles": [
+        "app/styles.css"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "local": "environments/environment.local.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "addons": [],
+  "packages": [],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "prefixInterfaces": false,
+    "poll": true,
+    "inline": {
+      "style": false,
+      "template": false
+    },
+    "spec": {
+      "class": false,
+      "component": true,
+      "directive": true,
+      "module": false,
+      "pipe": true,
+      "service": true
+    }
+  }
+}

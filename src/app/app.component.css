@@ -1,0 +1,52 @@
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+h4 small {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.header {
+  border-bottom: 3px solid #333;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.header.sub-header {
+  border-bottom: 1px solid #333;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.header.sub-header .details {
+  margin-top: 6px;
+}
+
+.intro {
+  margin-top: 10px;
+}
+
+.column-header {
+  color: #428bca;
+}
+
+@media print {
+  small {
+    color: #999 !important;
+  }
+  
+  .page {
+    page-break-after: always;
+  }
+  
+  .header small {
+    font-size: 8pt;
+  }
+  
+  .column-header {
+    color: #428bca !important;
+  }
+  
+}

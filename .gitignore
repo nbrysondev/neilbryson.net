@@ -1,0 +1,37 @@
+# compiled output
+/dist
+/tmp
+
+# config
+/src/environments/environment.local.ts
+
+# dependencies
+/node_modules
+/bower_components
+.npm-debug.log.swp
+
+# IDEs and editors
+/.idea
+/.vscode
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# system files
+.DS_Store
+Thumbs.db

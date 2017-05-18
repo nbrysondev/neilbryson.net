@@ -25,12 +25,15 @@ export class AuthenticationService {
         private authenticationActions: AuthenticationActions,
         private utilityService: UtilityService
     ) {
+        /*
+        @todo flesh outauthentication
         this.authentication$ = this.store.select('authentication');
         this.authentication$.subscribe(
             authentication => {
                 this.authentication = authentication;
             }
         );
+        */
     }
 
     /**
@@ -40,7 +43,7 @@ export class AuthenticationService {
     */
     public init(): void {
 
-        let token = localStorage.getItem('accessToken');
+        const token = localStorage.getItem('accessToken');
 
         if (token) {
             this.store.dispatch(this.authenticationActions.loginUserSuccess({

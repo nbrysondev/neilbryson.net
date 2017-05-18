@@ -21,10 +21,10 @@ export class NonAuthGuard implements CanActivate {
      * Checks for access token and kicks user back to login if non exists
      */
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-        if (!this.authenticationService.isLoggedIn()) {
+        //if (!this.authenticationService.isLoggedIn()) {
             // not logged in so return true
-            return true;
-        }
+        //    return true;
+        //}
 
         // logged in so redirect to homepage
         this.router.navigate(['/'], { queryParams: { returnUrl: state.url }});

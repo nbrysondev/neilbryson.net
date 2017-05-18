@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
-import { routing }        from './app.routing';
+import { routing } from './app.routing';
 import { environment } from '../environments';
 
 // ngrx
@@ -34,7 +34,7 @@ import { AuthGuard, NonAuthGuard } from './guards';
 
 
 // Services
-import { AuthenticationService, UserService, ApiService } from './services';
+import { AuthenticationService, UserService, ApiService, UtilityService } from './services';
 
 // Components
 import { AppComponent } from './app.component';
@@ -96,7 +96,8 @@ SocialAuthenticationModule.loadProvidersScripts({
         ApiService,
         UserService,
         AuthenticationActions,
-        UserActions
+        UserActions,
+        UtilityService
     ],
     entryComponents: [
         LogoutComponent

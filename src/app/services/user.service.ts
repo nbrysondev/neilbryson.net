@@ -21,7 +21,7 @@ export class UserService {
         private store: Store<AppState>,
         private userActions: UserActions
     ) {
-        this.user$ = this.store.select('user');
+        // this.user$ = this.store.select('user');
     }
 
     /**
